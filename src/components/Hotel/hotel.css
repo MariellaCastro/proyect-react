@@ -1,0 +1,271 @@
+.banner-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.header h1 {
+    font-size: 38px;
+    color: #72CE8E;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 900;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
+    line-height: 50px;
+}
+
+.header p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0px 50px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Estilo de Rooms*/
+.rooms,
+.services,
+.testimonials {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.rooms h2,
+.services h2,
+.testimonials h2 {
+    color: #72CE8E;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 900;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
+    font-size: 38px;
+}
+
+.service-grid,
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.room-card,
+.testimonial-item {
+    background: #ebebebcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2897);
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.room-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.room-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 28.2px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.room-card p {
+    margin: 1px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.room-card {
+    margin: 0 80px;
+}
+
+.carousel-inner {
+    display: grid;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #6dced1b2;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-container {
+        width: calc(100% - 40px);
+    }
+
+    .room-card {
+        max-width: 350px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .room-card h3 {
+        font-size: 22px;
+    }
+
+    .room-card p {
+        font-size: 18px;
+    }
+}
+.rating-section {
+    text-align: center;
+    padding: 40px 20px;
+    color: #b1b1b1;
+    font-family: Arial, sans-serif;
+}
+.rating-score {
+    font-size: 4.8rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.rating-highlight {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.rating-description {
+    color: #dddddd;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.rating-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+.rating-section .score{
+    width: 250px;
+    height: auto; 
+    position: absolute;
+    transform: translate(-50%, -79%);
+}
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #000000;
+}
+.rating-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.rating-score-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.rating-grid img {
+    height: 50px;
+}
+/*Estilo de Testimonio*/
+.testimonial-item {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-item p {
+    margin-top: 0;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.testimonial-header h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.testimonial-header .rating {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #7d2bdb;
+    white-space: nowrap;
+}

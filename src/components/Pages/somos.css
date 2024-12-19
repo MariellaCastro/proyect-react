@@ -1,0 +1,175 @@
+body{
+  background: linear-gradient(#00337E,#3BADCA);
+}
+.banner-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  
+  .banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-style: italic;
+    font-size: 34px;
+  }
+/*Estilo a AboutUs*/
+  .about-us {
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section {
+  position: relative;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 90px; 
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.05); 
+}
+.section-title {
+  color: #00ffcc;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 900;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  font-size: 30px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.section:hover .section-content {
+  opacity: 1; 
+}
+.section-content p {
+  padding: 15px;
+  line-height: 1.6;
+  text-align: justify;
+  color: white;
+  max-width: 500px;
+  z-index: 2;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+.section:hover .section-image {
+  transform: scale(1.1); 
+}
+.section-image {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.image-background {
+  position: absolute;
+  width: 290px;
+  height: 300px;
+  background-color: #00bfff; 
+  border-radius: 15px;
+  top: 30px;
+  left: -10px;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease-in-out;
+}
+.section:hover .image-background {
+  transform: rotate(40deg); 
+}
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .section-content,
+  .section-image {
+    max-width: 100%; 
+  }
+
+  .section-content p {
+    text-align: justify; 
+  }
+}
+/*Estilo Movilidades*/
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vehicles {
+  flex: 1;
+}
+
+.vehicle-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+}
+.vehicle-image:hover{
+  transform: scale(1.1); 
+}
+.visit {
+  flex: 1;
+}
+
+.container h2 {
+  color: #00ffcc;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 900;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  font-size: 30px;
+}
+
+.visit p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.visit iframe{
+  width:600px;
+  height:400px;
+  border-radius: 20px;
+}
